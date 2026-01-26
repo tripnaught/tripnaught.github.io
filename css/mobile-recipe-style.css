@@ -1,7 +1,22 @@
 /* Mobile Recipe App Styling - Landscape Mode */
 
+/* Hide navigation UI by default */
+.step-counter,
+.step-nav-buttons {
+  display: none;
+}
+
 /* Landscape orientation: step-by-step display */
 @media (orientation: landscape) {
+  /* Show navigation UI in landscape */
+  .step-counter {
+    display: block;
+  }
+
+  .step-nav-buttons {
+    display: flex;
+  }
+
   #recipe {
     display: flex;
     flex-direction: column;

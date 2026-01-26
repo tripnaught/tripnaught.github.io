@@ -7,11 +7,11 @@
 	<title>Recipies | Tripnaught</title>
 
 	<link rel="stylesheet" href="/css/styles.css" type="text/css">
-	<link rel="stylesheet" href="/css/mobile-recipe-style.css" type="text/css">
+	<link rel="stylesheet" href="/css/mobile-recipe-view.css" type="text/css">
 
 	<script defer src="/js/load-recipe.js"></script>
 	<script defer src="/js/render-recipe.js"></script>
-	<script defer src="/js/mobile-recipe-logic.js"></script>
+	<script defer src="/js/mobile-recipe-view.js"></script>
 </head>
 
 <body>
@@ -39,7 +39,16 @@
 		<p class="fuzzy">ingredients:</p>
 		<ul id="ingredients"></ul>
 		<p class="fuzzy">steps:</p>
+		<div class="step-counter"></div>
 		<ol id="steps"></ol>
+		<div class="step-nav-buttons">
+			<button class="step-nav-prev">← Previous</button>
+			<button class="step-nav-next">Next →</button>
+		</div>
+	</div>
+
+	<div id="mobile-recipe-view">
+
 	</div>
 
 </body>
