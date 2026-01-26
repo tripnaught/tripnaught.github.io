@@ -34,10 +34,6 @@ h1 {
 	border: 5px solid white;
 }
 
-h2 {
-	margin-top: 3em;
-}
-
 p {
 	font-size: 100%;
 }
@@ -46,7 +42,7 @@ a {
 	color: var(--pale-yellow);
 	text-decoration: underline;
 	text-decoration-style: wavy;
-	text-underline-offset: 0.18em;
+	text-underline-offset: 0.25em;
 }
 
 a:hover {
