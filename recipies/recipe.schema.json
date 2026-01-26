@@ -1,0 +1,48 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"type": "object",
+	"required": [],
+	"properties": {
+		"slug": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
+		"yield": {
+			"type": "string"
+		},
+		"ingredients": {
+			"type": "array",
+			"items": {"$ref": "#/$defs/ingredient"}
+		},
+		"steps": {
+			"type": "array"
+		},
+		"notes": {
+			"type": "array"
+		}
+	},
+	"$defs": {
+		"ingredient": {
+			"type": "object",
+			"properties": {
+				"amount": {
+					"type": "number"
+				},
+				"unit": {
+					"enum": ["c", "Tbsp", "tsp"]
+				},
+				"name": {
+					"type": "string"
+				},
+				"notes": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

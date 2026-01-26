@@ -1,14 +1,15 @@
-function router() {
-	const path = window.location.pathname;
+// @ts-check
 
-	if (path.startsWith("/recipes/") && path !== "/recipes.html") {
-		const slug = path.split("/").pop();
-		loadRecipe(slug);
-		return;
+async function router() {
+	const hash = window.location.hash.slice(1);
+
+	if (hash) {
+		const response = await fetch(`/recipies/${hash}.json`);
+		/** @type {Object} */
+		const recipe = await response.json();
+		renderRecipe(recipe);
 	}
-
-	renderRecipeIndex();
 }
 
-window.addEventListener("popstate", router);
+window.addEventListener("hashchange", router);
 document.addEventListener("DOMContentLoaded", router);

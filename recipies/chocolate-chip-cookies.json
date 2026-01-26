@@ -1,0 +1,36 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "chocolate-chip-cookies",
+	"title": "Chocolate Chip Cookies",
+	"description": "Crisp edges, soft center.",
+	"yield": "24 cookies",
+	"prepTimeMinutes": 15,
+	"cookTimeMinutes": 12,
+	"ingredients": [
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "butter",
+			"notes": "unsalted, softened"
+		},
+		{
+			"amount": 0.75,
+			"unit": "c",
+			"name": "brown sugar"
+		},
+		{
+			"amount": 2,
+			"unit": "c",
+			"name": "flour"
+		}
+	],
+	"steps": [
+		"Cream butter and sugar.",
+		"Add eggs and vanilla.",
+		"Fold in dry ingredients.",
+		"Bake at 350°F (180°C)."
+	],
+	"notes": [
+		"Chill dough for thicker cookies."
+	]
+}

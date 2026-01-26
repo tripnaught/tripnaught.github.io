@@ -7,17 +7,8 @@
 	<title>Recipies | Tripnaught</title>
 
 	<link rel="stylesheet" href="../styles.css" type="text/css">
-	<!-- <script defer src="/js/router.js"></script> -->
-	<!-- <script defer src="/js/recipes.js"></script> -->
-	<script>
-		const params = new URLSearchParams(window.location.search);
-		const route = params.get("route");
-
-		if (route && route.startsWith("/recipes/")) {
-			history.replaceState({}, "", route);
-			router();
-		}
-	</script>
+	<script defer src="/js/router.js"></script>
+	<script defer src="/js/renderRecipe.js"></script>
 </head>
 
 <body>
@@ -25,14 +16,23 @@
 
 	<h1>recipies</h1>
 
-	<h2>cookies</h2>
+	<div id="recipe-links">
 
-	<ul style="line-height: 2em;">
-		<li><a href="/recipies/chocolate-chip-cookies">chocolate chip cookies</a></li>
-		<li><a href="/recipies/oatmeal-cookies">oatmeal cookies</a></li>
-		<li><a href="/recipies/ginger-molasses-cookies">ginger molasses cookies</a></li>
-		<li><a href="/recipies/snickerdoodles">snickerdoodles</a></li>
-	</ul>
+		<h2>cookies</h2>
+
+		<ul style="line-height: 2em;">
+			<li><a href="#chocolate-chip-cookies">chocolate chip cookies</a></li>
+			<li><a href="#oatmeal-cookies">oatmeal cookies</a></li>
+			<li><a href="#ginger-molasses-cookies">ginger molasses cookies</a></li>
+			<li><a href="#snickerdoodles">snickerdoodles</a></li>
+		</ul>
+
+	</div>
+
+	<div id="recipe">
+		<h2 id="title"></h2>
+		<ul id="ingredients"></ul>
+	</div>
 
 </body>
 
