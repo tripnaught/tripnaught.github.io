@@ -2,10 +2,6 @@
 	"$schema": "./recipe.schema.json",
 	"slug": "chocolate-chip-cookies",
 	"title": "chocolate chip cookies",
-	"description": "Crisp edges, soft center.",
-	"yield": "24 cookies",
-	"prepTimeMinutes": 15,
-	"cookTimeMinutes": 12,
 	"ingredients": [
 		{
 			"amount": 1,
@@ -14,23 +10,54 @@
 			"notes": "softened"
 		},
 		{
-			"amount": 0.75,
+			"amount": 0.5,
+			"unit": "c",
+			"name": "white sugar"
+		},
+		{
+			"amount": 0.5,
 			"unit": "c",
 			"name": "brown sugar"
 		},
 		{
 			"amount": 2,
+			"unit": "",
+			"name": "eggs"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "vanilla extract"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "salt"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "baking soda"
+		},
+		{
+			"amount": 2.5,
 			"unit": "c",
-			"name": "flour"
+			"name": "all-purpose flour"
+		},
+		{
+			"amount": 2,
+			"unit": "c",
+			"name": "chocolate chips"
 		}
 	],
 	"steps": [
-		"Cream butter and sugar.",
-		"Add eggs and vanilla.",
-		"Fold in dry ingredients.",
-		"Bake at 350°F (180°C)."
+		"Preheat oven to 350°F",
+		"Cream together brown sugar, white sugar, and butter",
+		"Add eggs and vanilla",
+		"Combine flour, baking soda, and salt. Gradually stir into creamed mixture.",
+		"Fold in chocolate chips.",
+		"Using a scoop or rounded spoon, drop onto cookie sheet.",
+		"Bake 8-10 minutes until light brown>"
 	],
-	"notes": [
-		"Chill dough for thicker cookies."
-	]
+	"notes": []
 }

@@ -1,0 +1,76 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "vanishing-oatmeal-cookies",
+	"title": "vanishing oatmeal cookies",
+	"ingredients": [
+		{
+			"amount": 0.825,
+			"unit": "c",
+			"name": "butter",
+			"notes": "softened"
+		},
+		{
+			"amount": 0.75,
+			"unit": "c",
+			"name": "brown sugar",
+			"notes": "firmly packed"
+		},
+		{
+			"amount": 0.5,
+			"unit": "c",
+			"name": "white granulated sugar"
+		},
+		{
+			"amount": 2,
+			"unit": "",
+			"name": "eggs"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "vanilla extract"
+		},
+		{
+			"amount": 1.5,
+			"unit": "c",
+			"name": "all-purpose flour"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "baking soda"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "ground cinnamon"
+		},
+		{
+			"amount": 3,
+			"unit": "c",
+			"name": "rolled oats"
+		},
+		{
+			"amount": 0.5,
+			"unit": "tsp",
+			"name": "salt",
+			"notes": "optional"
+		},
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "raisins",
+			"notes": "if you're weird"
+		}
+	],
+	"steps": [
+		"Preheat oven to 350°F",
+		"Cream together brown sugar, white sugar, and butter",
+		"Add eggs and vanilla",
+		"Combine flour, baking soda, and salt. Gradually stir into creamed mixture.",
+		"Fold in chocolate chips.",
+		"Using a scoop or rounded spoon, drop onto cookie sheet.",
+		"Bake 8-10 minutes until light brown>"
+	],
+	"notes": []
+}
