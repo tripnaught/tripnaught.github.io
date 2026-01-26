@@ -34,7 +34,7 @@
 					"type": "number"
 				},
 				"unit": {
-					"enum": ["c", "Tbsp", "tsp"]
+					"type": "string"
 				},
 				"name": {
 					"type": "string"

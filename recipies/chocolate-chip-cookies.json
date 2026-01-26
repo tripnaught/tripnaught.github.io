@@ -1,7 +1,7 @@
 {
 	"$schema": "./recipe.schema.json",
 	"slug": "chocolate-chip-cookies",
-	"title": "Chocolate Chip Cookies",
+	"title": "chocolate chip cookies",
 	"description": "Crisp edges, soft center.",
 	"yield": "24 cookies",
 	"prepTimeMinutes": 15,
@@ -11,7 +11,7 @@
 			"amount": 1,
 			"unit": "c",
 			"name": "butter",
-			"notes": "unsalted, softened"
+			"notes": "softened"
 		},
 		{
 			"amount": 0.75,
