@@ -2,6 +2,7 @@
 	"$schema": "./recipe.schema.json",
 	"slug": "chocolate-chip-cookies",
 	"title": "chocolate chip cookies",
+	"source": "the back of a bag of nestle chocolate chips",
 	"ingredients": [
 		{
 			"amount": 1,

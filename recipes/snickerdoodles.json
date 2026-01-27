@@ -1,0 +1,75 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "snickerdoodles",
+	"title": "the good snickerdoodles",
+	"source": "adapted from <a href=\"https://www.inspiredtaste.net/25457/snickerdoodles-recipe/\">Inspired Taste</a>",
+	"ingredients": [
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "unsalted butter",
+			"notes": "softened"
+		},
+		{
+			"amount": 1.5,
+			"unit": "c",
+			"name": "granulated sugar"
+		},
+		{
+			"amount": 0.5,
+			"unit": "tsp",
+			"name": "vanilla extract"
+		},
+		{
+			"amount": 2,
+			"unit": "",
+			"name": "large eggs"
+		},
+		{
+			"amount": 2,
+			"unit": "tsp",
+			"name": "cream of tartar"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "baking soda"
+		},
+		{
+			"amount": 0.5,
+			"unit": "tsp",
+			"name": "salt"
+		},
+		{
+			"amount": 2.5,
+			"unit": "c",
+			"name": "all-purpose flour",
+			"notes": "softened"
+		},
+		{
+			"name": "ground cinnamon",
+			"notes": "to taste"
+		},
+		{
+			"name": "coarse graunlated sugar",
+			"notes": "for coating before baking"
+		},
+		{
+			"name": "ground cinnamon",
+			"notes": "for coating before baking"
+		}
+	],
+	"steps": [
+		"Preheat oven to 400°F.",
+		"In a stand mixer, add butter, sugar, and vanilla extract. Beat until creamy.",
+		"Add eggs one at a time.",
+		"Add cream of tartar, baking soda, salt, and cinnamon, and mix them in just a little.",
+		"Slowly add flour and mix. Dough will be very wet.",
+		"Chill until dough is firm -- can take anywhere from 4 hours to overnight.",
+		"In a separate bowl, combine coarse granulated sugar and ground cinnamon. For the strongest flavor, the mixture should be around the color of yeast or sand.",
+		"After chilled, use a cookie scoop or rounded spoon to form uniform balls of dough about 1\" in diameter.",
+		"Use hands to roll into a smooth ball, then roll in the cinnamon sugar mixture.",
+		"Bake for 8 minutes, turning halfway through."
+	],
+	"notes": []
+}

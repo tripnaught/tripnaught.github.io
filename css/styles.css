@@ -19,8 +19,10 @@ body {
 	padding: 20px;
 }
 
-.fuzzy, b {
+.fuzzy, b, mark {
 	font-family: 'Fuzzy Bubbles';
+	font-weight: 700;
+	background-color: transparent, var(--bg-color);
 	color: var(--accent);
 }
 

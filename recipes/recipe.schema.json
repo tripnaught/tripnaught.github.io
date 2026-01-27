@@ -9,6 +9,9 @@
 		"title": {
 			"type": "string"
 		},
+		"source": {
+			"type": "string"
+		},
 		"description": {
 			"type": "string"
 		},

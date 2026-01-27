@@ -1,6 +1,7 @@
 {
 	"$schema": "./recipe.schema.json",
 	"slug": "ginger-molasses-cookies",
+	"source": "adapted from <a href=\"https://xoxobella.com/just-like-starbucks-ginger-molasses-cookies-copycat-recipe/\">xoxoBella</a>",
 	"title": "copycat starbucks ginger molasses cookies",
 	"ingredients": [
 		{

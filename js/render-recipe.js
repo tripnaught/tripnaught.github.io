@@ -4,6 +4,7 @@
  * @typedef {Object} Recipe
  * @property {string} slug
  * @property {string} title
+ * @property {string} source
  * @property {string} description
  * @property {string} yield
  * @property {Ingredient[]} ingredients
@@ -55,6 +56,13 @@ function renderRecipe(recipe) {
 	const title = document.querySelector("#title");
 	if (!title) throw new Error('no title found');
 	title.textContent = recipe.title;
+
+	// set source
+	const source = document.querySelector("#source");
+	if (!source) throw new Error('no source found');
+	if (recipe.source && recipe.source !== '') {
+		source.innerHTML = "source: " + recipe.source;
+	}
 
 	// clear out ingredients
 	const ingredientsList = document.querySelector("#ingredients");

@@ -2,6 +2,7 @@
 	"$schema": "./recipe.schema.json",
 	"slug": "vanishing-oatmeal-cookies",
 	"title": "vanishing oatmeal cookies",
+	"source": "adapted from <a href=\"https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies\">Quaker Oats</a>",
 	"ingredients": [
 		{
 			"amount": 0.5,
