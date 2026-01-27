@@ -1,0 +1,69 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "copycat-starbucks-ginger-molasses-cookies",
+	"title": "copycat starbucks ginger molasses cookies",
+	"ingredients": [
+		{
+			"amount": 2.25,
+			"unit": "c",
+			"name": "flour"
+		},
+		{
+			"amount": 2,
+			"unit": "tsp",
+			"name": "baking soda"
+		},
+		{
+			"amount": 0.25,
+			"unit": "tsp",
+			"name": "salt"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "ground ginger"
+		},
+		{
+			"amount": 0.75,
+			"unit": "c",
+			"name": "unsalted butter",
+			"notes": "softened"
+		},
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "dark brown sugar"
+		},
+		{
+			"amount": 1,
+			"unit": "",
+			"name": "egg"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "ground cinnamon"
+		},
+		{
+			"amount": 0.25,
+			"unit": "c",
+			"name": "regular unsulphured molasses",
+			"notes": "blackstrap is too strong"
+		},
+		{
+			"name": "coarse granulated sugar",
+			"notes": "for coating cookies before baking"
+		}
+	],
+	"steps": [
+		"Preheat oven to 375°F.",
+		"Line baking sheet with parchment paper or silicone baking mat.",
+		"Cream together butter & brown sugar in a mixer on high speed until light and fluffy.",
+		"With mixer on medium speed, beat in egg & molasses, then increase speed to high and beat until well-mixed.",
+		"Combine flour, baking soda, salt, cinnamon, and ginger. Mix into creamed batter at low speed.",
+		"Use an cookie scoop or rounded spoon to form uniform balls of dough around 1\" in diameter, then roll into granulated sugar.",
+		"Place on baking sheet (caution: cookies will spread when baking!)",
+		"Bake for 12 mins, rotating halfway through."
+	],
+	"notes": []
+}

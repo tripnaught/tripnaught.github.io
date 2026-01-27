@@ -68,12 +68,32 @@ function renderRecipe(recipe) {
 	// add ingredients
 	for (const ingredient of recipe.ingredients) {
 		const li = document.createElement("li");
+
+		let textContent = '';
+
+		let amount = Number(ingredient.amount);
+		if (Number.isFinite(amount)) {
+			textContent += decimalToVulgarFraction(amount);
+		}
+
+		textContent += " ";
+
+		let unit = ingredient.unit ?? '';
+		if (unit !== undefined) {
+			textContent += unit;
+		}
+
+		textContent += " ";
+		textContent += ingredient.name;
+
 		let notes = ingredient.notes ?? '';
 		if (notes !== '' && notes !== undefined) {
-			notes = ", " + notes;
+			textContent += ", "
+			textContent += notes;
 		}
+
+		li.textContent = textContent
 		
-		li.textContent = `${decimalToVulgarFraction(ingredient.amount)} ${ingredient.unit} ${ingredient.name}${notes}`;
 		ingredientsList.appendChild(li);
 	}
 
@@ -110,6 +130,8 @@ function decimalToVulgarFraction(value) {
 		0.8333333: "⅚",
 		0.875: "⅞"
 	};
+
+	if (value === undefined) return '';
 
 	const whole = Math.trunc(value);
 	const decimal = value - whole;

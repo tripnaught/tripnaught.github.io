@@ -5,26 +5,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-	--pale-yellow: #DB4;
+	--font-family: 'Jost', 'Helvetica', 'Arial', sans-serif;
+	
+	--bg-color: #123;
+	--text-color: #FFF;
+	--accent: #DB4;
 }
 
 body {
-	font-family: 'Jost', 'Helvetica', 'Arial', sans-serif;
-	background-color: #123;
-	color: white;
+	font-family: var(--font-family);
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	padding: 20px;
 }
 
 .fuzzy, b {
 	font-family: 'Fuzzy Bubbles';
-	color: var(--pale-yellow);
+	color: var(--accent);
 }
 
 h1 {
 	font-family: 'Fuzzy Bubbles';
 	font-size: 5em;
 	margin: 0px;
-	color: var(--pale-yellow);
+	color: var(--accent);
 }
 
 #pfp {
@@ -39,12 +43,12 @@ p {
 }
 
 a {
-	color: var(--pale-yellow);
+	color: var(--accent);
 	text-decoration: underline;
 	text-decoration-style: wavy;
 	text-underline-offset: 0.25em;
 }
 
 a:hover {
-	color: white;
+	color: var(--text-color);
 }
