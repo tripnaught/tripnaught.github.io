@@ -73,7 +73,7 @@ function renderRecipe(recipe) {
 			notes = ", " + notes;
 		}
 		
-		li.textContent = `${ingredient.amount} ${ingredient.unit} ${ingredient.name}${notes}`;
+		li.textContent = `${decimalToVulgarFraction(ingredient.amount)} ${ingredient.unit} ${ingredient.name}${notes}`;
 		ingredientsList.appendChild(li);
 	}
 
@@ -88,4 +88,41 @@ function renderRecipe(recipe) {
 		li.textContent = `${step}`;
 		stepsList.appendChild(li);
 	}
+}
+
+/** 
+ * @param {number} value 
+ * @returns {string}
+*/
+function decimalToVulgarFraction(value) {
+	/** @type {Record<number, string>} */
+	const fractions = {
+		0.125: "⅛",
+		0.1666667: "⅙",
+		0.2: "⅕",
+		0.25: "¼",
+		0.3333333: "⅓",
+		0.375: "⅜",
+		0.5: "½",
+		0.625: "⅝",
+		0.6666667: "⅔",
+		0.75: "¾",
+		0.8333333: "⅚",
+		0.875: "⅞"
+	};
+
+	const whole = Math.trunc(value);
+	const decimal = value - whole;
+
+	const tolerance = 1e-4;
+
+	for (const key in fractions) {
+		if (Math.abs(decimal - Number(key)) < tolerance) {
+			return whole === 0
+				? fractions[key]
+				: `${whole}${fractions[key]}`;
+		}
+	}
+
+	return value.toString();
 }
