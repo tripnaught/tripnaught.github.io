@@ -46,10 +46,6 @@ async function loadRecipe() {
 	}
 }
 
-document.querySelector("#back-button")?.addEventListener("click", () => {
-	window.location.hash = "";
-});
-
 window.addEventListener("hashchange", loadRecipe);
 document.addEventListener("DOMContentLoaded", loadRecipe);
 

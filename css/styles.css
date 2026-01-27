@@ -38,8 +38,14 @@ h1 {
 	border: 5px solid white;
 }
 
-p {
+p, li {
 	font-size: 100%;
+	line-height: 1.5em;
+}
+
+li {
+	font-size: 100%;
+	line-height: 2em;
 }
 
 a {
