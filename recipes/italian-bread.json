@@ -1,0 +1,77 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "italian-bread",
+	"title": "homemade italian bread",
+	"source": "adapted from <a href=\"https://www.tastesoflizzyt.com/italian-bread/#wprm-recipe-container-13916\">Tastes of Lizzy T</a>",
+	"ingredients": [
+		{
+			"amount": 1,
+			"unit": "Tbsp",
+			"name": "granulated sugar"
+		},
+		{
+			"amount": 2,
+			"unit": "tsp",
+			"name": "salt"
+		},
+		{
+			"amount": 2,
+			"unit": "packages",
+			"name": "Red Star Platinum Baking Yeast"
+		},
+		{
+			"amount": 5,
+			"unit": "c",
+			"name": "all-purpose flour"
+		},
+		{
+			"amount": 1,
+			"unit": "Tbsp",
+			"name": "butter"
+		},
+		{
+			"amount": 1.75,
+			"unit": "c",
+			"name": "water"
+		},
+		{
+			"amount": 2,
+			"unit": "Tbsp",
+			"name": "cornmeal",
+			"notes": "optional"
+		},
+		{
+			"amount": 2,
+			"unit": "Tbsp",
+			"name": "vegetable oil",
+			"notes": "or melted butter"
+		},
+		{
+			"amount": 1,
+			"name": "large egg white",
+			"notes": "for egg wash"
+		},
+		{
+			"amount": 1,
+			"unit": "Tbsp",
+			"name": "water",
+			"notes": "for egg wash"
+		}
+	],
+	"steps": [
+		"In a stand mixer, combine the sugar, salt, yeast, and 2 cups of flour. Pour the yeast and salt on opposite sides of the bowl to prevent the yeast from activating prematurely.",
+		"In a microwave-safe bowl, heat the butter and water until it is very warm, but not hot. In my microwave, this takes 1 minute. The butter does not have to be completely melted.",
+		"With the mixer on low speed with the paddle attachent, gradually beat in the warm mixture until just blended. Increase speed to medium and beat for another 2 minutes.",
+		"Beat in the remaining flour to make a soft dough, scraping the sides of the bown as needed.",
+		"Switch to the dough hook attachment and knead the bread for 5-7 mins until the dough is smooth and elastic.",
+		"Turn the dough out onto a floured surface. Cut the dough in half; cover and let rest for 20 mins.",
+		"On a large baking sheet, lay down a silicone baking mat or spray with non-stick spray. Sprinkle with cornmeal (opt.)",
+		"On a floured surface, roll one dough half into a 15×10\" rectangle. Starting at the long side, tightly roll the dough like a jelly-roll, and pinch the seam to seal. Repeat with the other dough half.",
+		"Places the loaves seam-side down on the prepared baking sheet and taper the ends. Brush with vegetable oil or melted butter to prevent the dough from drying out during the rise.",
+		"Cover loosely with plastic wrap, leaving no gaps around the edges, and refrigerate for 2 to 24 hours.",
+		"To bake, preheat oven to 425°F. Remove loaves from the fridge, uncover and let stand 10 minutes. Cut 3 or 4 diagonal slashes on top of each loaf. Bake for 20 minutes.",
+		"In a small bowl, beat 1 egg white with 1 Tbsp water. Remove loaves from the oven. Brush evenly with the egg wash. Return to oven and bake for another 5 minutes.",
+		"Allow bread to cool completely before storing in an airtight container."
+	],
+	"notes": []
+}
