@@ -7,9 +7,8 @@
 	<title>Recipies | Tripnaught</title>
 
 	<link rel="stylesheet" href="/css/styles.css" type="text/css">
-	<link rel="stylesheet" href="/css/mobile-recipe-view.css" type="text/css">
+	<!-- <link rel="stylesheet" href="/css/mobile-recipe-view.css" type="text/css"> -->
 
-	<script defer src="/js/load-recipe.js"></script>
 	<script defer src="/js/render-recipe.js"></script>
 	<script defer src="/js/mobile-recipe-view.js"></script>
 </head>
@@ -17,7 +16,7 @@
 <body>
 	<img src="images/profile-pic.png" alt="Tripnaught Profile Picture" id="pfp">
 
-	<h1>recipies</h1>
+	<h1>recipes</h1>
 	<hr />
 
 	<div id="recipe-links">
@@ -27,28 +26,28 @@
 		<ul style="line-height: 2em;">
 			<li><a href="#chocolate-chip-cookies">chocolate chip cookies</a></li>
 			<li><a href="#oatmeal-cookies">oatmeal cookies</a></li>
-			<li><a href="#ginger-molasses-cookies">ginger molasses cookies</a></li>
-			<li><a href="#snickerdoodles">snickerdoodles</a></li>
+			<li><a href="#ginger-molasses-cookies">ginger molasses cookies</a> in progress </li>
+			<li><a href="#snickerdoodles">snickerdoodles</a> in progress </li>
 		</ul>
 
 	</div>
 
-	<div id="recipe" style="display: none;">
+	<div id="recipe">
 		<button id="back-button">Back</button>
 		<h2 id="title"></h2>
 		<p class="fuzzy">ingredients:</p>
 		<ul id="ingredients"></ul>
 		<p class="fuzzy">steps:</p>
-		<div class="step-counter"></div>
 		<ol id="steps"></ol>
+	</div>
+
+	<div id="recipe-mobile" style="display:none !important;">
+		<div class="step-counter">Step X of Y</div>
+		<div id="current-step">Preheat oven to 9000°F.</div>
 		<div class="step-nav-buttons">
 			<button class="step-nav-prev">← Previous</button>
 			<button class="step-nav-next">Next →</button>
 		</div>
-	</div>
-
-	<div id="mobile-recipe-view">
-
 	</div>
 
 </body>
