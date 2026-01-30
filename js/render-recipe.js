@@ -29,21 +29,29 @@ async function loadRecipe() {
 	const recipeDiv = document.querySelector("#recipe");
 	if (!recipeDiv) throw new Error('no recipeDiv found!');
 
-	/** @type {HTMLDivElement | null} */
-	const recipeMobileDiv = document.querySelector("#recipe-mobile");
-	if (!recipeMobileDiv) throw new Error('no recipeMobileDiv found!');
-
 	if (hash && hash !== '') {
-		const response = await fetch(`/recipes/${hash}.json`);
-		/** @type {Recipe} */
-		const recipe = await response.json();
-		renderRecipe(recipe);
-		linksDiv.style.display = "none";
-		recipeDiv.style.display = "block";
+		try {
+			const response = await fetch(`/recipes/${hash}.json`);
+			if (!response.ok) {
+				// Invalid hash - show links, hide recipe
+				linksDiv.style.display = "block";
+				recipeDiv.style.display = "none";
+				return;
+			}
+			/** @type {Recipe} */
+			const recipe = await response.json();
+			renderRecipe(recipe);
+			linksDiv.style.display = "none";
+			recipeDiv.style.display = "block";
+		} catch (error) {
+			// Fetch error - show links, hide recipe
+			console.error('Error loading recipe:', error);
+			linksDiv.style.display = "block";
+			recipeDiv.style.display = "none";
+		}
 	} else {
 		linksDiv.style.display = "block";
 		recipeDiv.style.display = "none";
-		recipeMobileDiv.style.display = "none";
 	}
 }
 
