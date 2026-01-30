@@ -2,6 +2,7 @@
 	"$schema": "./recipe.schema.json",
 	"slug": "recipe-name",
 	"title": "recipe name",
+	"source": "it came to me in a dream idk",
 	"ingredients": [
 		{
 			"amount": 1.5,
@@ -56,15 +57,15 @@
 		}
 	],
 	"steps": [
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F",
-		"Preheat oven to 350°F"
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F.",
+		"Preheat oven to 350°F."
 	],
 	"notes": []
 }

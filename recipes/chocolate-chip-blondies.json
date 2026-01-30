@@ -1,0 +1,77 @@
+{
+	"$schema": "./recipe.schema.json",
+	"slug": "chocolate-chip-blondies",
+	"title": "chocolate chip blondies",
+	"source": "the back of a bag of raley's dark brown sugar",
+	"ingredients": [
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "dark brown sugar"
+		},
+		{
+			"amount": 0.25,
+			"unit": "c",
+			"name": "(½ stick) butter",
+			"notes": "softened"
+		},
+		{
+			"amount": 1,
+			"name": "egg"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "vanilla extract"
+		},
+		{
+			"amount": 1,
+			"unit": "c",
+			"name": "all-purpose flour"
+		},
+		{
+			"amount": 1,
+			"unit": "tsp",
+			"name": "baking powder"
+		},
+		{
+			"amount": 0.25,
+			"unit": "tsp",
+			"name": "salt"
+		},
+		{
+			"amount": 0.5,
+			"unit": "c",
+			"name": "chocolate chips"
+		},
+		{
+			"amount": 0.5,
+			"unit": "c",
+			"name": "chopped pecans",
+			"notes": "if you're weird"
+		},
+		{
+			"amount": 0.5,
+			"unit": "c",
+			"name": "shredded coconut",
+			"notes": "if you're weird"
+		},
+		{
+			"amount": 1.5,
+			"unit": "c",
+			"name": "vanilla extract"
+		}
+	],
+	"steps": [
+		"Preheat oven to 375°F.",
+		"Grease 8x8x2\" baking dish.",
+		"In large bowl, beat sugar and butter until fluffy.",
+		"Beat in egg and vanilla.",
+		"Combine flour, baking powder, and salt. Beat into sugar mixture.",
+		"Stir in chocolate chips and co.; mix well. ",
+		"Spread batter evenly into prepared pan.",
+		"Bake 25 to 30 minutes.",
+		"Let cool in pan before cutting into bars. I find cutting into ninths is a good portion size."
+	],
+	"notes": []
+}

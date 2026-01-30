@@ -14,18 +14,20 @@
 
 	<title>Recipes | Tripnaught</title>
 
+	<link rel="stylesheet" href="/css/perfect-fourth.css" type="text/css">
 	<link rel="stylesheet" href="/css/styles.css" type="text/css">
 	<!-- <link rel="stylesheet" href="/css/mobile-recipe-view.css" type="text/css"> -->
 
 	<script defer src="/js/render-recipe.js"></script>
-	<script defer src="/js/mobile-recipe-view.js"></script>
 </head>
 
 <body>
-	<a href="https://tripnaught.github.io/"><img src="images/profile-pic.png" alt="Tripnaught Profile Picture"
-			id="pfp"></a>
+	<nav>
+		<a href="https://tripnaught.github.io/"><img src="images/profile-pic.png" alt="Tripnaught Profile Picture"
+				id="pfp"></a>
+	</nav>
 
-	<h1>recipes</h1>
+	<h1 class="display-lg"><mark>recipes</mark></h1>
 	<hr />
 
 	<div id="recipe-links">
@@ -39,6 +41,12 @@
 			<li><a href="#snickerdoodles">snickerdoodles</a></li>
 		</ul>
 
+		<h2>bars</h2>
+
+		<ul>
+			<li><a href="#chocolate-chip-blondies">chocolate chip blondies</a></li>
+		</ul>
+
 		<h2>bread</h2>
 
 		<ul>
@@ -49,22 +57,18 @@
 
 	<div id="recipe">
 		<a href="recipes.html" style="text-decoration: none;">← back</a>
+		
 		<h2 id="title"></h2>
-		<p id="source"></p>
-		<mark>ingredients:</mark>
+		<p id="source" class="text-caption"></p>
+
+		<h3><mark>ingredients:</mark></h3>
 		<ul id="ingredients"></ul>
-		<mark>steps:</mark>
+
+		<h3><mark>steps:</mark></h3>
 		<ol id="steps"></ol>
 	</div>
 
-	<div id="recipe-mobile" style="display:none !important;">
-		<div class="step-counter">Step X of Y</div>
-		<div id="current-step">Preheat oven to 9000°F.</div>
-		<div class="step-nav-buttons">
-			<button class="step-nav-prev">← Previous</button>
-			<button class="step-nav-next">Next →</button>
-		</div>
-	</div>
+	
 
 </body>
 
