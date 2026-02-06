@@ -79,33 +79,7 @@ function renderRecipe(recipe) {
 
 	// add ingredients
 	for (const ingredient of recipe.ingredients) {
-		const li = document.createElement("li");
-
-		let textContent = '';
-
-		let amount = Number(ingredient.amount);
-		if (Number.isFinite(amount)) {
-			textContent += decimalToVulgarFraction(amount);
-		}
-
-		textContent += " ";
-
-		let unit = ingredient.unit ?? '';
-		if (unit !== undefined) {
-			textContent += unit;
-		}
-
-		textContent += " ";
-		textContent += ingredient.name;
-
-		let notes = ingredient.notes ?? '';
-		if (notes !== '' && notes !== undefined) {
-			textContent += ", "
-			textContent += notes;
-		}
-
-		li.textContent = textContent
-		
+		const li = createIngredientElement(ingredient);
 		ingredientsList.appendChild(li);
 	}
 
@@ -120,6 +94,42 @@ function renderRecipe(recipe) {
 		li.textContent = `${step}`;
 		stepsList.appendChild(li);
 	}
+}
+
+/**
+ * Creates a list item element for an ingredient with optional links
+ * @param {Ingredient} ingredient
+ * @returns {HTMLLIElement}
+ */
+function createIngredientElement(ingredient) {
+	const li = document.createElement("li");
+
+	let amount = Number(ingredient.amount);
+	if (Number.isFinite(amount)) {
+		li.appendChild(document.createTextNode(decimalToVulgarFraction(amount)));
+	}
+
+	li.appendChild(document.createTextNode(" "));
+
+	let unit = ingredient.unit ?? '';
+	if (unit !== '') {
+		li.appendChild(document.createTextNode(unit));
+	}
+
+	li.appendChild(document.createTextNode(" "));
+
+	let name = ingredient.name ?? '';
+	if (name !== '') {
+		li.appendChild(document.createTextNode(name));
+	}
+
+	
+	let notes = ingredient.notes ?? '';
+	if (notes !== '' && notes !== undefined) {
+		li.appendChild(document.createTextNode(" (" + notes + ")"));
+	}
+
+	return li;
 }
 
 /** 
