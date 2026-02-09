@@ -63,7 +63,7 @@ body {
 
 #nav img {
 	width: 5vw;
-	min-width: 50px;
+	min-width: 40px;
 	height: auto;
 	border-radius: 50%;
 	border: 0.15em solid white;
@@ -73,7 +73,7 @@ body {
 
 #nav span {
 	color: var(--bg-color);
-	font-size: clamp(40px, 4vw, 20000px);
+	font-size: clamp(30px, 4vw, 20000px);
 	font-weight: 600;
 }
 
