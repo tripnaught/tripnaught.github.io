@@ -75,6 +75,7 @@ body {
 	color: var(--bg-color);
 	font-size: clamp(30px, 4vh, 20000px);
 	font-weight: 600;
+	letter-spacing: 0.03em;
 }
 
 #content {
@@ -96,6 +97,40 @@ a {
 
 a:hover {
 	color: var(--text-color);
+}
+
+#buttons {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	transform: translateX(50%);
+}
+
+#buttons button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	
+	background-color: var(--accent);
+	border: none;
+	border-radius: 12px;
+
+	padding: 5px;
+	min-height: 2.1em;
+
+	font-family: var(--font-family);
+	font-size: 1.333em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: var(--bg-color);
+	
+	cursor: pointer;
+}
+
+#buttons button svg {
+	max-width: 40px;
+	fill: var(--bg-color);
 }
 
 #recipe {
