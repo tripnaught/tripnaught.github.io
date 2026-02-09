@@ -53,14 +53,17 @@ body {
 	padding-bottom: 20px;
 }
 
-#nav #pfp-container {
+#nav a {
+	text-decoration-style: none !important;
+	text-decoration: none !important;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#nav #pfp-container img {
+#nav img {
 	width: 5vw;
+	min-width: 50px;
 	height: auto;
 	border-radius: 50%;
 	border: 0.15em solid white;
@@ -68,14 +71,9 @@ body {
 	transform: skewX(0deg);
 }
 
-#nav a {
-	text-decoration-style: none !important;
-	text-decoration: none !important;
-}
-
 #nav span {
 	color: var(--bg-color);
-	font-size: 4vw;
+	font-size: clamp(40px, 4vw, 20000px);
 	font-weight: 600;
 }
 
