@@ -1,8 +1,8 @@
 // @ts-check
 
-document.addEventListener("DOMContentLoaded", buildNav);
+document.addEventListener("DOMContentLoaded", generateNav);
 
-function buildNav() {
+function generateNav() {
 	const navDiv = document.getElementById('nav')
 	if (!navDiv || navDiv === null) throw new Error('oh no: No #nav found on this page!');
 	if (!(navDiv instanceof HTMLDivElement)) throw new Error('oh no: #nav found, but it\'s not a div!');
