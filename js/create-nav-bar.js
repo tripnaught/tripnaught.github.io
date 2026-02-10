@@ -11,6 +11,7 @@ function buildNav() {
 	a.href = "https://tripnaught.github.io/";
 
 	const profilePic = document.createElement("img");
+	profilePic.src = "images/profile-pic.png";
 	profilePic.alt = "tripnaught profile picture";
 	profilePic.id = "pfp";
 	
@@ -25,4 +26,6 @@ function buildNav() {
 	a.appendChild(profilePic);
 	a.appendChild(trip);
 	a.appendChild(naught);
+
+	navDiv.appendChild(a);
 }
