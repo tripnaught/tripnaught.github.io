@@ -64,6 +64,7 @@ const scale = [
     9,      // 6
     // 10, // b7
     11,     // 7
+    12,     // 1 (yes i know)
 ];
 
 const upCoda = [0, 2, 4, 5, 7, 9, 10, 7];
