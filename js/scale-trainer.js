@@ -1,10 +1,10 @@
 // Audio parameters
 const sampleRate = 44100;
-const duration = 0.15; // seconds per note
-const deltaDuration = 0.004; // amount to subtract from duration (higher = faster)
+const duration = 0.18; // seconds per note
+const deltaDuration = 0.003; // amount to subtract from duration (higher = faster)
 const rootFreq = 261.63;
 const pause = 0.01; // seconds between notes
-const volume = 0.5; // volume level (0.0 to 1.0)
+const volume = 0.1; // volume level (0.0 to 1.0)
 
 // Initialize Web Audio API
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -52,13 +52,18 @@ async function playMelody(pitches, root, dur) {
 }
 
 const scale = [
-    0, // 1
-    2, // 2
-    4, // 3
-    5, // 4
-    7, // 5
-    9, // 6
-    11, // 7
+    0,      // 1
+    1,  // b2
+    2,      // 2
+    3,  // b3
+    4,      // 3
+    5,      // 4
+    6,  // b5
+    7,      // 5
+    8,  // b6
+    9,      // 6
+    10, // b7
+    11,     // 7
 ];
 
 const upCoda = [0, 2, 4, 5, 7, 9, 10, 7];
@@ -74,14 +79,14 @@ function buildScalePattern(codaType) {
 
     let pattern = [];
 
-    for (let i = 0; i < 8; i++) {
-        for (let j = 0; j < 8; j++) {
+    for (let i = 0; i < scale.length; i++) {
+        for (let j = 0; j < scale.length; j++) {
             pattern.push(extendedScale[i + j]);
         }
     }
     pattern[pattern.length - 1] = pattern[1] + 12 + 12;
-    for (let i = 7; i > 0; i--) {
-        for (let j = 7; j >= 0; j--) {
+    for (let i = scale.length - 1; i > 0; i--) {
+        for (let j = scale.length - 1; j >= 0; j--) {
             pattern.push(extendedScale[i + j]);
         }
     }
