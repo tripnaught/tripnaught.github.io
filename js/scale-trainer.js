@@ -9,7 +9,11 @@ const volume = 0.1; // volume level (0.0 to 1.0)
 // Initialize Web Audio API
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
+// Playback control
+let isPlaying = false;
+
 function playNote(frequency, dur, vol = volume) {
+    if (!isPlaying) return;
     return new Promise((resolve) => {
         const gainNode = audioCtx.createGain();
         gainNode.gain.value = vol;
@@ -64,7 +68,7 @@ const scale = [
     9,      // 6
     // 10, // b7
     11,     // 7
-    12,     // 1 (yes i know)
+    12,
 ];
 
 const upCoda = [0, 2, 4, 5, 7, 9, 10, 7];
@@ -73,7 +77,9 @@ const downCoda = [0, 4, 7, 4, 0, -2, -3, -5];
 function buildScalePattern(codaType) {
     // Extend scale pattern to 2 octaves
     const extendedScale = [...scale];
-    for (let i = 0; i < scale.length; i++) {
+
+    // extendedScale.push(24);
+    for (let i = 1; i < scale.length; i++) {
         extendedScale.push(scale[i] + 12);
     }
     extendedScale.push(24);
@@ -104,9 +110,9 @@ async function scaleSequence() {
     let currentDuration = duration;
 
     // Wait a bit before starting
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 10));
 
-    while (true) {
+    while (isPlaying) {
         let root = 174.615; // F
         await playMelody(buildScalePattern("down"), root, currentDuration);
         currentDuration -= deltaDuration;
@@ -157,5 +163,17 @@ async function scaleSequence() {
     }
 }
 
-// Start the sequence immediately
-scaleSequence();
+// Button event listener
+document.addEventListener('DOMContentLoaded', () => {
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    playPauseBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            isPlaying = false;
+            playPauseBtn.textContent = 'Play';
+        } else {
+            isPlaying = true;
+            playPauseBtn.textContent = 'Pause';
+            scaleSequence();
+        }
+    });
+});
