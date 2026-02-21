@@ -2,7 +2,7 @@
 
 // Audio parameters
 const sampleRate = 44100;
-const initialBpm = 220;
+const initialBpm = 160;
 const accelBpm = 4;
 
 const rootFreq = 261.63;
