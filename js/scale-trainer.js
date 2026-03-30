@@ -36,17 +36,16 @@ function setBpm(newBpm) {
 /**
  * @param {*} frequency 
  * @param {*} dur 
- * @param {*} vol 
  * @returns 
  */
-function playNote(frequency, dur, vol = volume) {
+function playNote(frequency, dur) {
     if (!isPlaying) {
         setBpm(-1);
         return
     };
     return new Promise((resolve) => {
         const gainNode = audioCtx.createGain();
-        gainNode.gain.value = vol;
+        gainNode.gain.value = volume;
         gainNode.connect(audioCtx.destination);
 
         // Create oscillators for harmonics
@@ -59,7 +58,13 @@ function playNote(frequency, dur, vol = volume) {
             const oscillator = audioCtx.createOscillator();
             oscillator.frequency.value = frequency * harmonic;
             oscillator.type = 'sine';
-            oscillator.connect(gainNode);
+            
+            // Create a gain node for this harmonic with its amplitude
+            const harmonicGain = audioCtx.createGain();
+            harmonicGain.gain.value = amplitudes[index];
+            oscillator.connect(harmonicGain);
+            harmonicGain.connect(gainNode);
+            
             oscillators.push(oscillator);
         });
 
