@@ -8,7 +8,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" href="/favicon/favicon.ico" />
 
-	<title>Home | Tripnaught</title>
+	<title>Friend Groups | Tripnaught</title>
 
 	<link rel="stylesheet" href="/css/perfect-fourth.css" type="text/css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -25,7 +25,17 @@
 	<div id="content">
 		<h1 class="display-lg"><mark>friend groups</mark></h1>
 		<hr />
-		
+
+		<h2><mark>what is this?</mark></h2>
+		<p>This is a tool that made for the public school I work at, to create <mark>chaperone groups</mark> for field
+			trips based on students' friend groups. Sometimes over 100 kids will go on these trips, each putting
+			down 5 or 6 friends that they want in their group. This is slightly difficult to do by hand. <br /> Export
+			student responses as a <mark>CSV file,</mark> then use the <mark>Choose File</mark> button below to upload
+			your spreadsheet. The tool will create groups based on the students' friend groups. <br />Most students will
+			put down friends of the same gender, so to make more cohesive friend groups, please prefix the first name in
+			each row with the <mark>token</mark> for boy or girl below (I'll make this step optional Eventually™).
+		</p>
+
 		<h2><mark>settings</mark></h2>
 		<div>
 			<label for="num-groups">Number of Groups:</label>
@@ -46,9 +56,9 @@
 			<label for="rng-seed">RNG Seed:</label>
 			<input type="number" id="rng-seed" value="67">
 		</div>
-		<br>
+		<br />
 		<hr />
-		
+
 		<form action="/your-upload-script" method="post" enctype="multipart/form-data">
 			<label for="csv-file-upload">Choose a CSV to upload:&nbsp;</label>
 			<input type="file" id="csv-file-upload" name="filename" accept="application/csv" />
@@ -58,8 +68,12 @@
 		<br />
 
 		<div id="output" style="background-color: #ffffff20; padding:10px; height: 70vh; overflow-y: scroll;">
-
+			<!-- output text content will go here lolllll -->
 		</div>
+
+		<br />
+		<br />
+		<br />
 
 	</div>
 </body>
