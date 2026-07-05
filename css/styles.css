@@ -69,7 +69,7 @@ body {
 
 #nav img {
 	width: 100vw;
-	/* min-width: 50px; */
+	min-width: 1000px;
 	height: auto;
 	/* border-radius: 50%; */
 	margin-right: 10px;
@@ -90,7 +90,7 @@ body {
 
 h1 {
 	margin: 0px;
-	margin-top: 2vh;
+	margin-top: 1vh;
 }
 
 a {
