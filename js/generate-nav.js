@@ -11,21 +11,21 @@ function generateNav() {
 	a.href = "https://tripnaught.github.io/";
 
 	const profilePic = document.createElement("img");
-	profilePic.src = "images/profile-pic.png";
+	profilePic.src = "images/banner-new.png";
 	profilePic.alt = "tripnaught profile picture";
 	profilePic.id = "pfp";
 	
-	const trip = document.createElement("span");
-	trip.innerHTML = '<mark class="outline-accent">trip</mark>';
+	// const trip = document.createElement("span");
+	// trip.innerHTML = '<mark class="outline-accent">trip</mark>';
 	
-	const naught = document.createElement("span");
-	naught.classList.add('outline-white');
-	naught.innerHTML = 'naught';
+	// const naught = document.createElement("span");
+	// naught.classList.add('outline-white');
+	// naught.innerHTML = 'naught';
 	
 	
 	a.appendChild(profilePic);
-	a.appendChild(trip);
-	a.appendChild(naught);
+	// a.appendChild(trip);
+	// a.appendChild(naught);
 
 	navDiv.appendChild(a);
 }

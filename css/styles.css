@@ -56,7 +56,7 @@ body {
 
 	width: 100%;
 	background: linear-gradient(180deg, #0C1724 60%, rgba(0, 0, 0, 0) 100%);
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 #nav a {
@@ -68,21 +68,20 @@ body {
 }
 
 #nav img {
-	width: 5vh;
-	min-width: 50px;
+	width: 100vw;
+	/* min-width: 50px; */
 	height: auto;
-	border-radius: 50%;
-	border: 0.15em solid white;
+	/* border-radius: 50%; */
 	margin-right: 10px;
 	transform: skewX(0deg);
 }
 
-#nav span {
+/* #nav span {
 	color: var(--bg-color);
 	font-size: clamp(30px, 4vh, 20000px);
 	font-weight: 600;
 	letter-spacing: 0.03em;
-}
+} */
 
 #content {
 	width: 600px;
