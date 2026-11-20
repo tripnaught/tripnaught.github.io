@@ -343,9 +343,9 @@ async function processData(rows) {
 			const inGroup = friends.filter(f => set.has(f));
 
 			if (inGroup.length === 0) {
-				print(`<span style="color: red">${HTML_TAB}${formatName(person)} (0 friends)</span>\n`);
+				print(`<span class="friend-groups-unhappy">${HTML_TAB}${formatName(person)} (0 friends)</span>\n`);
 			} else if (inGroup.length === 1) {
-				print(`<span style="color: yellow">${HTML_TAB}${formatName(person)} (1 friend)</span>\n`);
+				print(`<span class="friend-groups-single">${HTML_TAB}${formatName(person)} (1 friend)</span>\n`);
 			} else {
 				print(`${HTML_TAB}${formatName(person)} (${inGroup.length} friends)\n`);
 			}

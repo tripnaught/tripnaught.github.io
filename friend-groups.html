@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 	<link rel="icon" href="/favicon/favicon.ico" />
 
 	<title>Friend Groups | Tripnaught</title>
 
 
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="/css/base.css" type="text/css">
+	<link rel="stylesheet" href="/css/components.css" type="text/css">
+	<link rel="stylesheet" href="/css/pages.css" type="text/css">
 
 	<script src="/js/generate-nav.js"></script>
 	<script src="/js/friend-groups.js"></script>
@@ -37,24 +39,31 @@
 		</p>
 
 		<h2><mark>settings</mark></h2>
-		<div>
+		<div class="friend-groups-settings">
+			<div class="friend-groups-setting">
 			<label for="num-groups">Number of Groups:</label>
 			<input type="number" id="num-groups" value="11" min="1">
-			<br>
+			</div>
+			<div class="friend-groups-setting">
 			<label for="display-friends">Display Friend Lists in Final Groups:</label>
 			<input type="checkbox" id="display-friends">
-			<br>
+			</div>
+			<div class="friend-groups-setting">
 			<label for="boy-token">Boy Token:</label>
 			<input type="text" id="boy-token" value="^" maxlength="1">
-			<br>
+			</div>
+			<div class="friend-groups-setting">
 			<label for="girl-token">Girl Token:</label>
 			<input type="text" id="girl-token" value="+" maxlength="1">
-			<br>
+			</div>
+			<div class="friend-groups-setting">
 			<label for="num-runs">Number of Optimization Runs:</label>
 			<input type="number" id="num-runs" value="100" min="1">
-			<br>
+			</div>
+			<div class="friend-groups-setting">
 			<label for="rng-seed">RNG Seed:</label>
 			<input type="number" id="rng-seed" value="67">
+			</div>
 		</div>
 		<br />
 		<hr />
@@ -67,7 +76,7 @@
 
 		<br />
 
-		<div id="output" style="background-color: #ffffff20; padding:10px; height: 70vh; overflow-y: scroll;">
+		<div id="output" class="friend-groups-output">
 			<!-- output text content will go here lolllll -->
 		</div>
 

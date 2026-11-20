@@ -1,0 +1,156 @@
+/* default fonts, color-variables, typography, etc */
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--bg-color: #112233;
+	--bg-color-deep: #09131d;
+	--text-color: #f7f0dd;
+	--accent: #dbb44a;
+	--accent-strong: #f0ca63;
+	--border-color: rgba(219, 180, 68, 0.2);
+	--surface: rgba(255, 255, 255, 0.04);
+	--shadow: 0 18px 44px rgba(2, 8, 14, 0.28);
+	--radius: 20px;
+	--font-family: 'Jost', 'Futura', 'Helvetica Neue', Arial, sans-serif;
+	--font-display: 'Fuzzy Bubbles', 'Comic Sans MS', 'Segoe Print', cursive;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-family);
+	font-size: clamp(16px, 1.1vw + 14px, 18px);
+	line-height: 1.6;
+	background:
+		radial-gradient(circle at top, rgba(219, 180, 68, 0.16), transparent 34%),
+		var(--bg-color-deep);
+	color: var(--text-color);
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent);
+}
+
+.dot-layer {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+	opacity: 0.68;
+	mix-blend-mode: screen;
+	transform: translate(calc(var(--parallax-x, 0px) * var(--depth, 1)),
+		calc(var(--parallax-y, 0px) * var(--depth, 1)));
+	transition: transform 180ms ease-out;
+}
+
+.dot-layer--sm {
+	--depth: 1;
+	background-image: radial-gradient(circle, rgba(255, 255, 255, 0.13) 0 0.8px, transparent 1px);
+	background-size: 16px 16px;
+	background-position: 6px 6px;
+}
+
+.dot-layer--md {
+	--depth: 2;
+	background-image: radial-gradient(circle, rgba(7, 14, 22, 0.82) 0 1.9px, transparent 2.2px);
+	background-size: 36px 36px;
+	background-position: 12px 12px;
+}
+
+.dot-layer--lg {
+	--depth: 4;
+	background-image: radial-gradient(circle, rgba(7, 14, 22, 0.74) 0 2.8px, transparent 3.1px);
+	background-size: 48px 48px;
+	background-position: 24px 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: 0.01em;
+}
+
+h1 {
+	margin: 0 -0.5rem 0.5rem;
+	font-size: clamp(2.65rem, 8vw, 3.75rem);
+}
+
+h2 {
+	font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+}
+
+h3 {
+	font-size: clamp(1.2rem, 1.7vw, 1.4rem);
+}
+
+p,
+li {
+	font-size: clamp(1.04rem, 1.2vw, 1.12rem);
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	margin: 0.8rem 0 1.4rem;
+	background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+mark {
+	background: transparent;
+	color: var(--accent-strong);
+	font-family: var(--font-display);
+	font-size: 95%;
+	font-weight: 700;
+	padding: 0 0.16em;
+}
+
+.display-lg {
+	font-family: var(--font-display);
+	font-size: clamp(2.7rem, 8.5vw, 3.9rem);
+	line-height: 0.95;
+	letter-spacing: 0.02em;
+	margin-bottom: 0.6rem;
+}
+
+.wavy {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-underline-offset: 0.28em;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: color 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+a:hover,
+a:hover svg,
+.button-link:hover,
+.button-link:hover svg {
+	color: var(--text-color);
+	fill: var(--text-color);
+}
